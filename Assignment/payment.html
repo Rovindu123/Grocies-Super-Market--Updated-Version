@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Page</title>
+    <link rel="stylesheet" href="Styles/payment.css">
+    <link rel="stylesheet" href="Styles/common.css">    
+</head>
+<body>
+    <picture class="image">
+        <button><a href="index.html"><img src="Images\Logo.png" alt="Logo" height="200px" width="200px"></a></button>
+    </picture>
+    <header> 
+        <nav id="LinksToOtherPages">
+            <a href="index.html" >Home Page</a>
+            <a href="about us.html">About Us</a>
+            <a href="fruits.html">Fruits</a>
+            <a href="vegetables.html">Vegetables</a>
+            <a href="Dairy products.html">Dairy Products</a>
+            <a href="cosmetics and skin care.html">Cosmetics and Skin care</a>
+            <a href="Order.html">Cart</a>
+            <a href="Loyalty registration.html">Sign Up</a>
+        </nav>
+    </header> 
+        <main>
+        <section id="main">
+            <h1>Welcome to Grocies Supermarket!</h1>
+            <p>Your one-stop shop for all your grocery needs.</p>
+        </section>
+
+    <h1>Payment Page</h1>
+    <div id="orderSummary">
+        <h2>Your Order</h2>
+        <table id="orderTable">
+            <thead>
+                <tr>
+                    <th>Item</th>
+                    <th>Quantity</th>
+                    <th>Price (Rs)</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="2">Total</td>
+                    <td id="totalPrice">0</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+
+    <form id="paymentForm">
+        <h2>Personal Details</h2>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+        <label for="ContactNumber">Contact Number:</label>
+        <input type="number" id="ContactNumber" name="ContactNumber" required><br><br>
+
+        <h2>Delivery Details</h2>
+        <label for="address">Address:</label>
+        <input type="text" id="address" name="address" required><br><br>
+        <label for="city">City:</label>
+        <input type="text" id="city" name="city" required><br><br>
+        <label for="postalCode">Postal Code:</label>
+        <input type="text" id="postalCode" name="postalCode" required><br><br>
+
+        <h2>Payment Information</h2>
+        <label for="cardNumber">Card Number:</label>
+        <input type="text" id="cardNumber" name="cardNumber" required><br><br>
+        <label for="expiryDate">Expiry Date:</label>
+        <input type="month" id="expiryDate" name="expiryDate" required><br><br>
+        <label for="cvv">CVV:</label>
+        <input type="text" id="cvv" name="cvv" required><br><br>
+
+        <button class="payment-button" type="button" id="processPaymentButton">Pay</button>
+    </form>
+
+    <div id="thankYouMessage" style="display:none;">
+        <h2>Thank you for your purchase!</h2>
+        <p>Your order will be delivered on <span id="deliveryDate"></span>.</p>
+    </div>
+
+    <footer class="footer"> 
+            <h2>Contact Us</h2>
+                    <p>Email: info@ecomarket.com</p>
+                    <p>Phone: +94 75 850 7519</p>
+                    <p>Address: 285/2A , Union Place, Colomco</p>
+        </div>
+        <div class="social">
+            <h2>Follow Us</h2>
+            <div class="social-links">
+                <a href="#"><img src="Images\facebook-logo.png" alt="Facebook"></a>
+                <a href="#"><img src="Images\twitter-logo.png" alt="Twitter"></a>
+                <a href="#"><img src="Images\instagram-logo.avif" alt="Instagram"></a>
+            </div>
+        </div>
+        <div class="copyright-icons">
+            <span>&copy; Eco Market 2024</span>
+        </div>
+    </footer>
+    <script src="JS/payment.js"></script>
+    </body>
+    </html>
