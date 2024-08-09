@@ -1,5 +1,5 @@
 {
-    "name": "My PWA",
+    "name": "Grocies Supermarket PWA",
     "short_name": "PWA",
     "description": "A simple example of a Progressive Web App",
     "start_url": "/index.html",
